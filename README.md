@@ -172,3 +172,23 @@ Results will be stored in the `results/` folder, including model performance met
 | Issues Found | 0 (so far) |
 | Decisions Made | 6 |
 | Dependencies Identified | 8 |
+## Repository Structure
+
+The following folders are used in this repository:
+
+| Folder | Description |
+|--------|-------------|
+| `Datasets/` | Raw and processed datasets used in the project |
+| `Models/` | Saved trained machine learning models |
+| `Experimental setup/` | Documentation of experimental configuration |
+| `Experimental results/` | Experimental results, performance metrics, and charts |
+| `Statistical helper and comparison scripts/` | Python scripts for statistical tests and model comparison |
+| `Visualisation scripts/` | Python scripts for creating charts and plots |
+| `notebooks/` | Jupyter notebooks for EDA, modeling, and evaluation |
+
+### Key Files
+
+| File | Description |
+|------|-------------|
+| `README.md` | Project overview, motivation, problem statement, and repository structure |
+| `26305040_SS1_PartC_CAP182.pdf` | Detailed data request for the project (Part C) |
