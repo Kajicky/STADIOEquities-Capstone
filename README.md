@@ -79,3 +79,96 @@ The following folder structure is used in this repository:
 ### Experimental Results
 
 Results will be stored in the `results/` folder, including model performance metrics and visualizations in `results/charts/`.
+## RAAIDD Log
+
+---
+
+### Risks
+
+| Risk | Impact | Mitigation |
+|------|--------|------------|
+| Data may have missing or incomplete values for key client features | Analysis may be inaccurate or incomplete | Perform data quality checks early; use imputation techniques or drop incomplete records |
+| The dataset may be imbalanced (more active than dormant clients) | Model may perform poorly on dormant clients | Use techniques like SMOTE or class weighting to handle imbalance |
+| Client data may not be easily linkable across different sources | Unable to create a unified client view | Request a consistent Client ID field across all datasets at the start |
+| The model may not generalise well to future clients | Predictions may be unreliable | Use cross-validation and test on unseen data |
+| Time constraints may limit the depth of analysis | May not explore all features or models | Prioritise key features and models; document limitations |
+
+---
+
+### Actions
+
+| Action | Timeline | Status |
+|--------|----------|--------|
+| Obtain and review historical client data from STADIOEquities | Week 1 | Not Started |
+| Perform exploratory data analysis (EDA) to understand client patterns | Week 1-2 | Not Started |
+| Clean and preprocess data (handle missing values, outliers, encode categories) | Week 2 | Not Started |
+| Split data into training and testing sets (80/20 split) | Week 2 | Not Started |
+| Train baseline models (Logistic Regression, Random Forest) | Week 3 | Not Started |
+| Train advanced models (XGBoost) | Week 3 | Not Started |
+| Evaluate model performance using accuracy, precision, recall, F1, AUC-ROC | Week 3 | Not Started |
+| Identify top features predicting client dormancy | Week 4 | Not Started |
+| Create visualisations (ROC curves, confusion matrices, feature importance) | Week 4 | Not Started |
+| Document findings and provide recommendations for STADIOEquities | Week 4 | Not Started |
+| Update README.md with all project documentation | Ongoing | In Progress |
+
+---
+
+### Assumptions
+
+| Assumption | Impact if False |
+|------------|-----------------|
+| The historical data provided is accurate and complete | Analysis and predictions may be unreliable |
+| Client behaviour patterns from the past 6 years will continue to be relevant | Model may not predict future dormancy accurately |
+| Client ID is consistent across all datasets (funding, trading, app usage) | Unable to link client data across sources |
+| Dormancy is defined correctly as no activity within 6 months | Wrong clients may be labelled as dormant |
+| The data provided is sufficient to build a predictive model | May need additional features not currently available |
+| Clients who are active have similar characteristics to those who become dormant | Model may not learn patterns of dormancy effectively |
+
+---
+
+### Issues
+
+| Issue | Date Identified | Impact | Resolution |
+|-------|-----------------|--------|------------|
+| No issues identified yet | - | - | Issues will be documented as they arise during the project |
+
+---
+
+### Decisions
+
+| Decision | Rationale | Date Made |
+|----------|-----------|-----------|
+| Focus on dormancy within 6 months of registration | This is where the biggest increase (22% to 31%) was observed | Project Start |
+| Use Python for analysis | Industry standard for data science projects | Project Start |
+| Use 80/20 train-test split | Standard practice for model development | Project Start |
+| Start with Logistic Regression as baseline | Simple, interpretable model to establish benchmark | Project Start |
+| Use F1-Score as primary metric | Handles imbalanced data better than accuracy alone | Project Start |
+| Limit analysis to clients who registered in the last 6 years | Available data history | Project Start |
+
+---
+
+### Dependencies
+
+| Task | Depends On | Timeline |
+|------|------------|----------|
+| Data cleaning | Data being received from STADIOEquities | Week 2 |
+| EDA | Data being cleaned | Week 2 |
+| Model training | Data being split into train/test | Week 3 |
+| Model evaluation | Model being trained | Week 3 |
+| Feature importance analysis | Model being trained | Week 4 |
+| Visualisations | Model evaluation being complete | Week 4 |
+| Recommendations | All analysis being complete | Week 4 |
+| Final README update | All tasks being complete | End of Project |
+
+---
+
+### Summary
+
+| Category | Count |
+|----------|-------|
+| Risks Identified | 5 |
+| Actions Planned | 11 |
+| Assumptions Made | 6 |
+| Issues Found | 0 (so far) |
+| Decisions Made | 6 |
+| Dependencies Identified | 8 |
