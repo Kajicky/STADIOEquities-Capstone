@@ -2,7 +2,7 @@
 Capstone project on client dormancy
 # STADIOEquities Capstone Project
 
-## Project Motivation
+## 1. Project Motivation
 
 ### Reducing Client Dormancy and Improving Client Engagement at STADIOEquities
 
@@ -24,7 +24,7 @@ Overall, the motivation for this project comes from a clear gap between the numb
 
 ---
 
-## 3. Problem Statement
+## 2. Problem Statement
 
 ---
 
