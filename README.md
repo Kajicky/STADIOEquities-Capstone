@@ -33,3 +33,49 @@ STADIOEquities has a large customer base of approximately **2.3 million** regist
 Despite having several years of historical client data, it remains unclear which client characteristics and behaviours are associated with clients becoming dormant. STADIOEquities has information on account and funding activity, trading behaviour, app and website usage, client demographics and marketing engagement, which could provide useful insight into patterns of client engagement.
 
 Therefore, this study aims to investigate the factors associated with client dormancy and use the available historical data to develop a data-driven method for identifying clients who are more likely to become inactive. The findings could assist STADIOEquities in making more informed decisions about client activation and retention.
+## Repository Structure
+
+The following folder structure is used in this repository:
+
+| Folder | Description |
+|--------|-------------|
+| `data/raw/` | Raw, unprocessed data received from STADIOEquities |
+| `data/processed/` | Cleaned and preprocessed data ready for analysis |
+| `notebooks/` | Jupyter notebooks for EDA, modeling, and evaluation |
+| `models/` | Saved trained machine learning models |
+| `scripts/` | Python scripts for preprocessing, training, evaluation, visualization, and statistical tests |
+| `results/` | Experimental results, performance metrics, and charts |
+| `results/charts/` | Visualizations and plots |
+| `docs/` | Documentation, including the data request PDF |
+
+### Key Files
+
+| File | Description |
+|------|-------------|
+| `README.md` | Project overview, motivation, problem statement, and repository structure |
+| `docs/Data_Request.pdf` | Detailed data request for the project |
+
+### Experimental Setup
+
+- **Environment:** Python 3.x
+- **Libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn, xgboost
+- **Models:** Logistic Regression, Random Forest, XGBoost
+- **Evaluation Metrics:** Accuracy, Precision, Recall, F1-Score, AUC-ROC
+- **Validation:** 5-fold cross-validation
+
+### Scripts Overview
+
+| Script | Purpose |
+|--------|---------|
+| `data_preprocessing.py` | Clean and prepare data |
+| `statistical_tests.py` | Run statistical tests (t-test, chi-square, correlation) |
+| `model_training.py` | Train machine learning models |
+| `model_comparison.py` | Compare model performance |
+| `group_comparison.py` | Compare client groups |
+| `feature_analysis.py` | Analyze feature importance |
+| `performance_metrics.py` | Calculate model evaluation metrics |
+| `visualization.py` | Create charts and plots |
+
+### Experimental Results
+
+Results will be stored in the `results/` folder, including model performance metrics and visualizations in `results/charts/`.
